@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/86a62bd63e.js" crossorigin="anonymous"></script>
+   
+    <title>TK-GRAM</title>
+    <style>
+        /* body{
+            text-align: center;
+        } */
+
+        *
+        {
+            margin: 0 auto;
+        }
+       
+        .container1,.container2 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image img
+        {
+            width:250px;
+            margin: 0 0.5em;
+        }
+        .materials
+        {
+            position: relative;
+            top:-120px;
+            left: 80px;
+        }
+        i
+        {
+            font-size: 4em;
+            color:white;
+        }
+        .main
+        {
+        display: flex;
+        /* justify-content: center; */
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 15%;
+   
+        margin-bottom: 3rem;
+        }
+        .content
+        {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-around; */
+            width: 60%;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .content p{
+            margin-bottom: 7%;
+        }
+        .content h4{
+            font-size: 1.5rem;
+        }
+        span{
+            font-size: 1.5rem;
+        }
+        nav h1{
+            font-style: italic;
+            color:white;
+        }
+        nav{
+       background-color: #dd3939;
+            height:50px;
+            align-items: center;
+            text-align: center;
+  
+        }
+        .blue
+        {
+            color:blue;
+            font-size:1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1>TK-GRAM</h1>
+    </nav>
+
+
+<div class="main">
+    <div class="pic">
+    <img src="circle.png" id="circle" alt="">    
+    </div>
+    
+    <div class="content">
+        <p style="font-size: 2em;">CIRCLE</p>
+        <p>CIRCLE works on women’s economic #empowerment in Pakistan and the region
+        through <span class="blue">#advocacy </span> , <span class="blue">#research </span> <span class="blue">#leadership </span>& innovative <span class="blue">#entrepreneurship </span> labs.</p>
+        <p><span style="color:grey;font-size:1em">followed by</span> fatimab.45, circlewomen
+        </p>
+    </div>
+</div>
+
+<div class="container1">
+<!-- img1 -->
+
+    <div class="img" ondblclick="like()">
+        <div class="image">
+            <img src="sadaffe.jpg" alt="">
+        </div>
+
+        <div class="materials">
+            <i class="fas fa-heart" id="heart" onclick="count2()" ></i>
+            <br>
+            <span id="count" style="color:white; ">0</span>
+        </div>
+    </div>
+
+
+
+
+
+<!-- img2 -->
+<div class="img" ondblclick="like2()">
+    <div class="image tuba">
+        <img src="tuba.jpg" alt="">
+    </div>
+
+    <div class="materials">
+        <i class="fas fa-heart" id="heart2" onclick="count4()" ></i>
+        <br>
+        <span id="count2" style="color:white">0</span>
+    </div>
+</div>
+
+
+<!-- img3 -->
+<div class="img" ondblclick="like3()">
+    <div class="image">
+        <img src="taleya.jpg" alt="">
+    </div>
+
+    <div class="materials">
+        <i class="fas fa-heart" id="heart3" onclick="count6()" ></i>
+        <br>
+        <span id="count3" style="color:white">0</span>
+    </div>
+</div>
+</div>
+
+<!-- container2 -->
+
+<div class="container2">
+    <!-- img4 -->
+    
+        <div class="img" ondblclick="like4()">
+            <div class="image">
+                <img src="sarah.jpg" alt="">
+            </div>
+    
+            <div class="materials">
+                <i class="fas fa-heart" id="heart4" onclick="count8()" ></i>
+                <br>
+                <span id="count4" style="color:white">0</span>
+            </div>
+        </div>
+    
+    
+    <!-- img5 -->
+    <div class="img" ondblclick="like5()">
+        <div class="image">
+            <img src="khair.jpg" alt="">
+        </div>
+    
+        <div class="materials">
+            <i class="fas fa-heart" id="heart5" onclick="count10()" ></i>
+            <br>
+            <span id="count5" style="color:white">0</span>
+        </div>
+    </div>
+    
+    
+    <!-- img6 -->
+    <div class="img" ondblclick="like6()">
+        <div class="image">
+            <img src="alvina.jpg" alt="" height="250px">
+        </div>
+    
+        <div class="materials">
+            <i class="fas fa-heart" id="heart6" onclick="count12()" ></i>
+            <br>
+            <span id="count6" style="color:white">0</span>
+        </div>
+    </div>
+    
+</div>
+    <script src="app.js"></script>
+</body>
+
+</html>
